@@ -1,0 +1,11 @@
+= form_for @colt do |f|
+  = f.label :name
+  = f.text_field :name
+  .div
+  = f.label :position
+  = f.text_field :position
+  .div
+  = f.label :number
+  = f.number_field :number
+  .div
+  = f.submit

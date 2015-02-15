@@ -1,0 +1,8 @@
+-@colts.each do |colt|
+  %p= link_to colt.name, colt_path(colt)
+  %p= colt.position
+  %p= colt.number
+  = link_to 'Edit', edit_colt_path(colt)
+  = link_to 'Delete', colt_path(colt), method: :delete, data:{confirm: "Delete this Player?"}
+  %hr
+= link_to 'New Colt', new_colt_path
